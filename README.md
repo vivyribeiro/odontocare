@@ -1,4 +1,7 @@
 # OdontoCare
 
-## Esse site foi feito como desafio na NLW Together da Rocketseat na trilha Origin com o excelente professor Mayk Brito.
+## Esse site foi feito como projeto na [NLW Together](https://nextlevelweek.com/inscricao/6) na trilha Origin organizado pela [Rocketseat](https://rocketseat.com.br/) tendo o excelente professor [Mayk Brito](https://www.linkedin.com/in/maykbrito/).
 ## Aqui deixo meus agradecimentos ao professor e todos da Rocketseat por proprocional essa semana sensacional de aprendizado, que sigamos rumo ao próximo nível!
+
+### Acesse o site [OdontoCare](https://vivyribeiro.github.io/odontocare/).
+
