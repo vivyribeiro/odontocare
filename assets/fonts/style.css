@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ddsgp8');
+  src:  url('fonts/icomoon.eot?ddsgp8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ddsgp8') format('truetype'),
+    url('fonts/icomoon.woff?ddsgp8') format('woff'),
+    url('fonts/icomoon.svg?ddsgp8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dental_hygiene:before {
+  content: "\e902";
+}
+.icon-dental_protheses:before {
+  content: "\e908";
+}
+.icon-dentist_healthcare_occupation:before {
+  content: "\e90a";
+}
+.icon-denture_implant:before {
+  content: "\e90d";
+}
+.icon-dental_plus:before {
+  content: "\e90e";
+}
+.icon-bacteria_dental_disease:before {
+  content: "\e90f";
+}
+.icon-dental_extaction:before {
+  content: "\e910";
+}
+.icon-check-up_dental:before {
+  content: "\e911";
+}
+.icon-child_dental:before {
+  content: "\e912";
+}
+.icon-arrow-up:before {
+  content: "\e90c";
+}
+.icon-phone:before {
+  content: "\e900";
+}
+.icon-close:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-instagram:before {
+  content: "\e904";
+}
+.icon-mail:before {
+  content: "\e905";
+}
+.icon-map-pin:before {
+  content: "\e906";
+}
+.icon-menu:before {
+  content: "\e907";
+}
+.icon-whatsapp:before {
+  content: "\e909";
+}
+.icon-youtube:before {
+  content: "\e90b";
+}
+.icon-ctrl:before {
+  content: "\ea50";
+}
