@@ -1,4 +1,4 @@
-/*  abre e fecha o menu quando clicar no icone: hamburguer e x */
+/* abre e fecha o meno quando clica nos icones */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -26,12 +26,12 @@ function changeHeaderWhenScroll() {
     // scroll é maior que a altura do header
     header.classList.add('scroll')
   } else {
-    // menor que a altura do header
+    // scroll é menor que altura do header
     header.classList.remove('scroll')
   }
 }
 
-/* Testimonials carousel slider swiper */
+/* testimonials carousell slider swiper */
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   pagination: {
@@ -47,7 +47,7 @@ const swiper = new Swiper('.swiper-container', {
   }
 })
 
-/* ScrollReveal: Mostrar elementos quando der scroll na página */
+/* ScrollReveal: Mostrar os elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -56,10 +56,10 @@ const scrollReveal = ScrollReveal({
 })
 
 scrollReveal.reveal(
-  `#home .image, #home .text,
-  #about .image, #about .text,
-  #services header, #services .card,
-  #testimonials header, #testimonials .testimonials
+  `#home .image, #home .text, 
+  #about .image, #about .text, 
+  #services header, #services .card, 
+  #testimonials header, #testimonials .testimonials, 
   #contact .text, #contact .links,
   footer .brand, footer .social
   `,
@@ -92,7 +92,7 @@ function activateMenuAtCurrentSection() {
 
     if (checkpointStart && checkpointEnd) {
       document
-        .querySelector('nav ul li a[href*=' + sectionId + ']')
+        .querySelector('nav ul li a[href *=' + sectionId + ']')
         .classList.add('active')
     } else {
       document

@@ -1,4 +1,4 @@
-/*====  RESET ============================ */
+/***** RESET DO CSS ************** */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ img {
   height: auto;
 }
 
-/*====  VARIABLES ============================ */
+/***** VARIABLES ************** */
 :root {
   --header-height: 4.5rem;
 
@@ -41,9 +41,10 @@ img {
   --body-font: 'DM Sans', sans-serif;
 }
 
-/*===  BASE ============================ */
+/***** BASE ************** */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -93,7 +94,7 @@ body {
   );
 }
 
-/*====  LAYOUT ============================ */
+/***** LAYOUT ************** */
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -141,7 +142,7 @@ body {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
-/*====  LOGO ============================ */
+/***** LOGO ************** */
 .logo {
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
@@ -155,7 +156,7 @@ body {
   color: var(--body-color);
 }
 
-/*====  NAVIGATION ============================ */
+/***** NAVIGATION ************** */
 nav {
   height: var(--header-height);
   display: flex;
@@ -207,13 +208,12 @@ nav .menu ul {
   display: none;
 }
 
-/* Mostrar menu */
+/* Mostrar Menu */
 nav.show .menu {
   opacity: 1;
   visibility: visible;
 
   background: var(--body-color);
-
   height: 100vh;
   width: 100vw;
 
@@ -234,6 +234,7 @@ nav.show ul.grid {
 }
 
 /* toggle menu */
+
 .toggle {
   color: var(--base-color);
   font-size: 1.5rem;
@@ -257,7 +258,7 @@ nav.show div.icon-close {
   top: 1.5rem;
 }
 
-/*====  HOME ============================ */
+/***** HOME ************** */
 #home {
   overflow: hidden;
 }
@@ -305,7 +306,7 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
-/*====  ABOUT ============================ */
+/***** ABOUT ************** */
 #about {
   background: white;
 }
@@ -343,7 +344,7 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
-/*====  SERVICES ============================ */
+/***** SERVICES ************** */
 .cards.grid {
   gap: 1.5rem;
 }
@@ -368,7 +369,7 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
-/*====  TESTIMONIALS ============================ */
+/***** TESTIMONIALS ************** */
 #testimonials {
   background: white;
 }
@@ -419,7 +420,7 @@ nav.show div.icon-close {
   margin-right: 0.5rem;
 }
 
-/* swiper */
+/***** SWIPER ************** */
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
@@ -434,7 +435,7 @@ nav.show div.icon-close {
   background: var(--base-color);
 }
 
-/*====  CONTACT ============================ */
+/***** CONTACT ************** */
 #contact .grid {
   gap: 4rem;
 }
@@ -462,7 +463,7 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
-/*====  FOOTER ============================ */
+/***** FOOTER ************** */
 footer {
   background: var(--base-color);
 }
@@ -500,7 +501,7 @@ footer .social a:hover {
   transform: translateY(-8px);
 }
 
-/* Back to top */
+/***** Back to top ************** */
 .back-to-top {
   background: var(--base-color);
   color: var(--text-color-light);
@@ -528,10 +529,11 @@ footer .social a:hover {
   transform: translateY(0);
 }
 
+/* Responsivo */
 /*========= MEDIA QUERIES =========*/
-/* extra large devices: 1200 > (large desktops, 1200px and up)*/
+/* extra large devices: 1200 > */
 @media (min-width: 1200px) {
-  /* reusable classes */
+  /* Reusable classes */
   .container {
     max-width: 1120px;
     margin-left: auto;
@@ -554,7 +556,7 @@ footer .social a:hover {
     height: 3.125rem;
   }
 
-  /* navigation */
+  /* Navigation */
   nav .menu {
     opacity: 1;
     visibility: visible;
@@ -585,7 +587,7 @@ footer .social a:hover {
     margin-top: var(--header-height);
   }
 
-  /* home */
+  /* Home */
   #home .container {
     grid-auto-flow: column;
     justify-content: space-between;
@@ -602,13 +604,13 @@ footer .social a:hover {
     text-align: left;
   }
 
-  /* about */
+  /* About */
   #about .container {
     margin: 0 auto;
     grid-auto-flow: column;
   }
 
-  /* services */
+  /* Services */
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -618,13 +620,13 @@ footer .social a:hover {
     padding-right: 3rem;
   }
 
-  /* testimonials */
+  /* Testimonials */
   #testimonials .container {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* contact */
+  /* Contact */
   #contact .container {
     grid-auto-flow: column;
     align-items: center;
@@ -634,7 +636,7 @@ footer .social a:hover {
     max-width: 25rem;
   }
 
-  /* footer */
+  /* Footer */
   footer.section {
     padding: 3.75rem 0;
   }
@@ -649,14 +651,13 @@ footer .social a:hover {
     font-size: 2.25rem;
   }
 }
+
 /* large devices: 1023 > */
-/* large devices: 992 > Large devices (desktops, 992px and up) */
+/* large devices: 992 > */
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
 }
-/* medium devices: 767 > (tablets, 768px and up)*/
-
-/* Small devices (landscape phones, 576px and up) */
+/* medium devices: 767 > */
